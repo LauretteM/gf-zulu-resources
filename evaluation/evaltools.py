@@ -4,6 +4,7 @@ import os
 import re
 import pgf
 import subprocess
+import csv
 
 LANG_CODE="Zul"
 
@@ -30,7 +31,7 @@ def read_gftest_output(in_str,conc_name):
             tree = pair_match.group(1)
             lin = pair_match.group(2)
             for (a,b) in replacements:
-                tree = tree.replace(a,b)
+                tree = tree.replace(a,'('+b+')')
             pairs.append((str(number),tree,lin))
             number += 1
         except StopIteration:
@@ -82,6 +83,16 @@ def gftest2html(infilepath,outdirpath,grammar,lang_code):
     outfile = open(outfilepath,'w')
     outfile.write(html_code)
 
+def regression_test(grammar,treelin_pairs,lang_code):
+    failures = []
+    conc_grammar = grammar.languages[grammar.abstractName+lang_code]
+    for (tree,lin) in treelin_pairs:
+        expr = pgf.readExpr(tree)
+        genlin = conc_grammar.linearize(expr)
+        if not genlin == lin:
+            failures.append((tree,lin,genlin))
+    return failures
+
 if __name__ == '__main__':
 
     import argparse
@@ -90,17 +101,40 @@ if __name__ == '__main__':
     subparsers = parser.add_subparsers(dest='subparser_name', help='sub-command help')
 
     parser_viz = subparsers.add_parser('viz_gftest', help='visualise gftest output with HTML')
+    parser_rt = subparsers.add_parser('regression',help='perform regression test')
 
     parser_viz.add_argument("input",help="file containing gftest output")
     parser_viz.add_argument("grammar",help="PGF grammar")
     parser_viz.add_argument("-d",dest="outdirpath",help="directory to save html file (default: .)")
     parser_viz.add_argument("-l",dest="lang_code",help="3-letter ISO code")
 
+    parser_rt.add_argument("grammar",help="PGF grammar")
+    parser_rt.add_argument("treebank",help="gold standard treebank")
+    parser_rt.add_argument("-d",dest="outdirpath",help="directory to save report (default: .)")
+    parser_rt.add_argument("-l",dest="lang_code",help="3-letter ISO code")
+
     args = parser.parse_args()
 
     lang_code = args.lang_code if args.lang_code else LANG_CODE
-
     grammar = pgf.readPGF(args.grammar)
-    infilepath = args.input
     outdirpath = args.outdirpath if args.outdirpath else "."
-    gftest2html(infilepath,outdirpath,grammar,lang_code)
+
+    if args.subparser_name == 'viz_gftest':
+        infilepath = args.input
+        gftest2html(infilepath,outdirpath,grammar,lang_code)
+    else:
+        treelin_pairs = []
+        with open(args.treebank, newline='') as csvfile:
+            treebankreader = csv.reader(csvfile)
+            for row in treebankreader:
+                treelin_pairs.append(tuple(row))
+        failures = regression_test(grammar,treelin_pairs,lang_code)
+        if len(failures) > 0:
+            reportfilename = os.path.join(outdirpath,'regression.report')
+            with open(reportfilename, 'w', newline='') as csvfile:
+                reportwriter = csv.writer(csvfile)
+                reportwriter.writerow(['tree', 'expected','generated'])
+                for row in failures:
+                    reportwriter.writerow(row)
+        else:
+            print("Regression test succeeded")
