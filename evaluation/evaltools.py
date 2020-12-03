@@ -3,9 +3,7 @@
 import os
 import re
 import pgf
-import pydot
 import subprocess
-from graphviz import render
 
 LANG_CODE="Zul"
 
