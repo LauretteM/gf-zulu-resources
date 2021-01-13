@@ -59,10 +59,10 @@ def generate_image(tree,grammar,filenamebase,outdirpath):
     return pngfilename
 
 def generate_html(imglin_pairs):
-    html_head = "<head><style>th, td { padding: 15px; font-size: x-large; } table,td { border: 1px solid black; }</style></head>"
+    html_head = "<head><style>th, td { padding: 15px; font-size: large; width:50%;} table,td { border: 1px solid black; }</style></head>"
     html_code = "<body><table>\n\t<tr>\n\t\t<th>Number</th><th>Tree</th><th>Linearisation</th>\n\t</tr>\n"
     for (number,img,lin) in imglin_pairs:
-        html_code += "\t<tr>\t\t<td>%s</td><td><img src=images/%s></td><td>%s</td>\n\t</tr>" % (number,img,lin)
+        html_code += '\t<tr>\t\t<td>%s</td><td><img src=images/%s></td><td>%s</td>\n\t</tr>' % (number,img,lin)
     html_code += "</table></body>"
     return html_head + html_code
 
