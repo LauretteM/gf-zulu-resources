@@ -77,7 +77,7 @@ def gftest2html(infilepath,outdirpath,grammar,lang_code):
     in_str = open(infilepath,'r').read()
     treelin_pairs = read_gftest_output(in_str,conc_name)
     print("Generating images...")
-    imglin_pairs = [(number,generate_image(tree,grammar,infilenamebase+number,outdirpath),lin) for (number,tree,lin) in treelin_pairs]
+    imglin_pairs = [(number,generate_image(tree,grammar,infilenamebase+'_'+number,outdirpath),lin) for (number,tree,lin) in treelin_pairs]
     html_code = generate_html(imglin_pairs)
     print("Writing HTML...")
     outfile = open(outfilepath,'w')
