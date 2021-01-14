@@ -1,3 +1,5 @@
 *.gfo
 *.pyc
 *.pgf
+*.pdf
+*.png

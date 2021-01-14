@@ -11,7 +11,7 @@ abstract TestLex = Cat ** {
 
     hamb_V : V ;
     bon_V : V ;
-    az_V : V ;
-    f_V : V ;
+    -- az_V : V ;
+    -- f_V : V ;
 
 }

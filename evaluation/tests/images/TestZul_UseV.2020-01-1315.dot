@@ -1,0 +1,39 @@
+graph {
+n0[label = "PhrUtt : Phr", shape = "plaintext", style = "solid"]
+n1[label = "NoPConj : PConj", shape = "plaintext", style = "solid"]
+n0 -- n1
+n2[label = "UttQS : Utt", shape = "plaintext", style = "solid"]
+n3[label = "PotQS : QS", shape = "plaintext", style = "solid"]
+n4[label = "PPos : Pol", shape = "plaintext", style = "solid"]
+n3 -- n4
+n5[label = "QuestCl : QCl", shape = "plaintext", style = "solid"]
+n6[label = "PredNP : Cl", shape = "plaintext", style = "solid"]
+n7[label = "MassNP : NP", shape = "plaintext", style = "solid"]
+n8[label = "RelCN : CN", shape = "plaintext", style = "solid"]
+n9[label = "UseN : CN", shape = "plaintext", style = "solid"]
+n10[label = "ntu_1_2_N : N", shape = "plaintext", style = "solid"]
+n9 -- n10
+n8 -- n9
+n11[label = "UseRCl : RS", shape = "plaintext", style = "solid"]
+n12[label = "TPresTemp : Temp", shape = "plaintext", style = "solid"]
+n11 -- n12
+n13[label = "PNeg : Pol", shape = "plaintext", style = "solid"]
+n11 -- n13
+n14[label = "RelVP : RCl", shape = "plaintext", style = "solid"]
+n15[label = "IdRP : RP", shape = "plaintext", style = "solid"]
+n14 -- n15
+n16[label = "UseV : VP", shape = "plaintext", style = "solid"]
+n17[label = "bon_V : V", shape = "plaintext", style = "solid"]
+n16 -- n17
+n14 -- n16
+n11 -- n14
+n8 -- n11
+n7 -- n8
+n6 -- n7
+n5 -- n6
+n3 -- n5
+n2 -- n3
+n0 -- n2
+n18[label = "NoVoc : Voc", shape = "plaintext", style = "solid"]
+n0 -- n18
+}

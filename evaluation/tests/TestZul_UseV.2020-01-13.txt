@@ -1,0 +1,46 @@
+
+
+* UseV bon_V
+UseV : _215159 → VP_60573
+
+** 1) PhrUtt NoPConj (UttS (UseCl TPerfTemp PPos (PredVP (UsePron they6_Pron) VP_60573))) NoVoc
+TestZul> abonile
+** 2) PhrUtt NoPConj (UttS (UseCl TPastTemp PPos (PredVP (UsePron they6_Pron) VP_60573))) NoVoc
+TestZul> abona
+** 3) PhrUtt NoPConj (UttS (UseCl TPresTemp PPos (PredVP (UsePron they6_Pron) VP_60573))) NoVoc
+TestZul> ayabona
+** 4) PhrUtt NoPConj (UttS (UseCl TFutTemp PPos (PredVP (UsePron they6_Pron) VP_60573))) NoVoc
+TestZul> azobona
+** 5) PhrUtt NoPConj (UttS (UseCl TPerfTemp PNeg (PredVP (UsePron they6_Pron) VP_60573))) NoVoc
+TestZul> awabonile
+** 6) PhrUtt NoPConj (UttS (UseCl TPastTemp PNeg (PredVP (UsePron they6_Pron) VP_60573))) NoVoc
+TestZul> kawabonanga
+** 7) PhrUtt NoPConj (UttS (UseCl TPresTemp PNeg (PredVP (UsePron they6_Pron) VP_60573))) NoVoc
+TestZul> awaboni
+** 8) PhrUtt NoPConj (UttS (UseCl TFutTemp PNeg (PredVP (UsePron they6_Pron) VP_60573))) NoVoc
+TestZul> awazubona
+** 9) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredNP (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPerfTemp PPos (RelVP IdRP VP_60573)))))))) NoVoc
+TestZul> ngumuntu obone na
+** 10) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredNP (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPastTemp PPos (RelVP IdRP VP_60573)))))))) NoVoc
+TestZul> ngumuntu obonayo na
+** 11) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredNP (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPresTemp PPos (RelVP IdRP VP_60573)))))))) NoVoc
+TestZul> ngumuntu obonayo na
+** 12) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredNP (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TFutTemp PPos (RelVP IdRP VP_60573)))))))) NoVoc
+TestZul> ngumuntu obona na
+** 13) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredNP (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPerfTemp PNeg (RelVP IdRP VP_60573)))))))) NoVoc
+TestZul> ngumuntu ongabonile na
+** 14) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredNP (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPastTemp PNeg (RelVP IdRP VP_60573)))))))) NoVoc
+TestZul> ngumuntu ongabonanga na
+** 15) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredNP (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPresTemp PNeg (RelVP IdRP VP_60573)))))))) NoVoc
+TestZul> ngumuntu ongaboni yo na
+** 16) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredNP (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TFutTemp PNeg (RelVP IdRP VP_60573)))))))) NoVoc
+TestZul> ngumuntu ongebona na
+** 17) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredVP (UsePron they6_Pron) VP_60573)))) NoVoc
+TestZul> angabona na
+** 18) PhrUtt NoPConj (UttQS (PotQS PNeg (QuestCl (PredVP (UsePron they6_Pron) VP_60573)))) NoVoc
+TestZul> angebone na
+
+
+
+
+
