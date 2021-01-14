@@ -1,4 +1,4 @@
-abstract TestLex = Cat ** {
+abstract TestLex = Cat,ExtraCatZulAbs ** {
 
   fun
     ntu_1_2_N : N ;
@@ -13,5 +13,7 @@ abstract TestLex = Cat ** {
     bon_V : V ;
     -- az_V : V ;
     -- f_V : V ;
+
+    phi_INAdv : INAdv ;
 
 }

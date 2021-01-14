@@ -1,0 +1,25 @@
+graph {
+n0[label = "PhrUtt : Phr", shape = "plaintext", style = "solid"]
+n1[label = "NoPConj : PConj", shape = "plaintext", style = "solid"]
+n0 -- n1
+n2[label = "UttS : Utt", shape = "plaintext", style = "solid"]
+n3[label = "UseCl : S", shape = "plaintext", style = "solid"]
+n4[label = "TPresTemp : Temp", shape = "plaintext", style = "solid"]
+n3 -- n4
+n5[label = "PNeg : Pol", shape = "plaintext", style = "solid"]
+n3 -- n5
+n6[label = "PredVP : Cl", shape = "plaintext", style = "solid"]
+n7[label = "UsePron : NP", shape = "plaintext", style = "solid"]
+n8[label = "they6_Pron : Pron", shape = "plaintext", style = "solid"]
+n7 -- n8
+n6 -- n7
+n9[label = "UseV : VP", shape = "plaintext", style = "solid"]
+n10[label = "hamb_V : V", shape = "plaintext", style = "solid"]
+n9 -- n10
+n6 -- n9
+n3 -- n6
+n2 -- n3
+n0 -- n2
+n11[label = "NoVoc : Voc", shape = "plaintext", style = "solid"]
+n0 -- n11
+}

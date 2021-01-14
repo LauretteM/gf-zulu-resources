@@ -1,4 +1,4 @@
-concrete TestLexZul of TestLex = CatZul ** open ResZul,ParadigmsZul in {
+concrete TestLexZul of TestLex = CatZul,ExtraCatZul ** open ResZul,ParadigmsZul,Prelude in {
 
   lin
     ntu_1_2_N = mkN "ntu" C1_2 ;
@@ -14,5 +14,7 @@ concrete TestLexZul of TestLex = CatZul ** open ResZul,ParadigmsZul in {
     bon_V = mkV "bon" ;
     az_V = mkV "az" ;
     f_V = mkV "f" ;
+
+    phi_INAdv = { s = "phi" ; postIAdv = False } ;
 
 }

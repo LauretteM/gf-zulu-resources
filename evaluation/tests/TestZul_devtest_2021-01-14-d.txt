@@ -1,0 +1,46 @@
+
+
+* UseV hamb_V
+UseV : _215164 → VP_60575
+
+** 1) PhrUtt NoPConj (UttS (UseCl TPerfTemp PPos (PredVP (UsePron they6_Pron) VP_60575))) NoVoc
+TestZul> ahambile
+** 2) PhrUtt NoPConj (UttS (UseCl TPastTemp PPos (PredVP (UsePron they6_Pron) VP_60575))) NoVoc
+TestZul> ahamba
+** 3) PhrUtt NoPConj (UttS (UseCl TPresTemp PPos (PredVP (UsePron they6_Pron) VP_60575))) NoVoc
+TestZul> ayahamba
+** 4) PhrUtt NoPConj (UttS (UseCl TFutTemp PPos (PredVP (UsePron they6_Pron) VP_60575))) NoVoc
+TestZul> azohamba
+** 5) PhrUtt NoPConj (UttS (UseCl TPerfTemp PNeg (PredVP (UsePron they6_Pron) VP_60575))) NoVoc
+TestZul> awahambanga
+** 6) PhrUtt NoPConj (UttS (UseCl TPastTemp PNeg (PredVP (UsePron they6_Pron) VP_60575))) NoVoc
+TestZul> awahambanga
+** 7) PhrUtt NoPConj (UttS (UseCl TPresTemp PNeg (PredVP (UsePron they6_Pron) VP_60575))) NoVoc
+TestZul> awahambi
+** 8) PhrUtt NoPConj (UttS (UseCl TFutTemp PNeg (PredVP (UsePron they6_Pron) VP_60575))) NoVoc
+TestZul> awazuhamba
+** 9) PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPerfTemp PPos (RelVP IdRP VP_60575)))) phi_INAdv)) NoVoc
+TestZul> umuntu ohambe uphi
+** 10) PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPastTemp PPos (RelVP IdRP VP_60575)))) phi_INAdv)) NoVoc
+TestZul> umuntu owahamba uphi
+** 11) PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPresTemp PPos (RelVP IdRP VP_60575)))) phi_INAdv)) NoVoc
+TestZul> umuntu ohamba uphi
+** 12) PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TFutTemp PPos (RelVP IdRP VP_60575)))) phi_INAdv)) NoVoc
+TestZul> umuntu ozohamba uphi
+** 13) PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPerfTemp PNeg (RelVP IdRP VP_60575)))) phi_INAdv)) NoVoc
+TestZul> umuntu ongahambanga uphi
+** 14) PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPastTemp PNeg (RelVP IdRP VP_60575)))) phi_INAdv)) NoVoc
+TestZul> umuntu ongahambanga uphi
+** 15) PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPresTemp PNeg (RelVP IdRP VP_60575)))) phi_INAdv)) NoVoc
+TestZul> umuntu ongahambi uphi
+** 16) PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TFutTemp PNeg (RelVP IdRP VP_60575)))) phi_INAdv)) NoVoc
+TestZul> umuntu ongazuhamba uphi
+** 17) PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredVP (UsePron they6_Pron) VP_60575)))) NoVoc
+TestZul> angahamba na
+** 18) PhrUtt NoPConj (UttQS (PotQS PNeg (QuestCl (PredVP (UsePron they6_Pron) VP_60575)))) NoVoc
+TestZul> angehambe na
+
+
+
+
+
