@@ -35,7 +35,7 @@ $ cd $WORKDIR/gf-zulu-resources/evaluation
 
 Compile the grammar with the test lexicon.
 ```Shell
-$ gf --make ---path=$WORKDIR/gf-rgl-zul/src/* ../lexica/test/TestZul.gf
+$ gf --make --optimize-pgf --path=$WORKDIR/gf-rgl-zul/src/* --output-dir=../lexica/test ../lexica/test/TestZul.gf
 ```
 
 ### 1. Regression test
