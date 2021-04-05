@@ -2,3 +2,17 @@ PhrUtt NoPConj (UttS (UseCl TPerfTemp PPos (PredVP (UsePron they6_Pron) (UseV ha
 PhrUtt NoPConj (UttS (UseCl TPastTemp PPos (PredVP (UsePron they6_Pron) (UseV hamb_V)))) NoVoc,ahamba
 PhrUtt NoPConj (UttS (UseCl TPresTemp PPos (PredVP (UsePron they6_Pron) (UseV hamb_V)))) NoVoc,ayahamba
 PhrUtt NoPConj (UttS (UseCl TFutTemp PPos (PredVP (UsePron they6_Pron) (UseV hamb_V)))) NoVoc,azohamba
+PhrUtt NoPConj (UttS (UseCl TPerfTemp PNeg (PredVP (UsePron they6_Pron) (UseV hamb_V)))) NoVoc,awahambanga
+PhrUtt NoPConj (UttS (UseCl TPastTemp PNeg (PredVP (UsePron they6_Pron) (UseV hamb_V)))) NoVoc,awahambanga
+PhrUtt NoPConj (UttS (UseCl TPresTemp PNeg (PredVP (UsePron they6_Pron) (UseV hamb_V)))) NoVoc,awahambi
+PhrUtt NoPConj (UttS (UseCl TFutTemp PNeg (PredVP (UsePron they6_Pron) (UseV hamb_V)))) NoVoc,awazuhamba
+PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPerfTemp PPos (RelVP IdRP (UseV hamb_V))))) phi_INAdv)) NoVoc,umuntu ohambe uphi
+PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPastTemp PPos (RelVP IdRP (UseV hamb_V))))) phi_INAdv)) NoVoc,umuntu owahamba uphi
+PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPresTemp PPos (RelVP IdRP (UseV hamb_V))))) phi_INAdv)) NoVoc,umuntu ohamba uphi
+PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TFutTemp PPos (RelVP IdRP (UseV hamb_V))))) phi_INAdv)) NoVoc,umuntu ozohamba uphi
+PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPerfTemp PNeg (RelVP IdRP (UseV hamb_V))))) phi_INAdv)) NoVoc,umuntu ongahambanga uphi
+PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPastTemp PNeg (RelVP IdRP (UseV hamb_V))))) phi_INAdv)) NoVoc,umuntu ongahambanga uphi
+PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TPresTemp PNeg (RelVP IdRP (UseV hamb_V))))) phi_INAdv)) NoVoc,umuntu ongahambi uphi
+PhrUtt NoPConj (UttQS (IAdvQS (MassNP (RelCN (UseN ntu_1_2_N) (UseRCl TFutTemp PNeg (RelVP IdRP (UseV hamb_V))))) phi_INAdv)) NoVoc,umuntu ongazuhamba uphi
+PhrUtt NoPConj (UttQS (PotQS PPos (QuestCl (PredVP (UsePron they6_Pron) (UseV hamb_V))))) NoVoc,angahamba na
+PhrUtt NoPConj (UttQS (PotQS PNeg (QuestCl (PredVP (UsePron they6_Pron) (UseV hamb_V))))) NoVoc,angehambe na

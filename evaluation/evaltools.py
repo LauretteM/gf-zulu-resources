@@ -10,7 +10,7 @@ LANG_CODE="Zul"
 
 def read_gftest_output(in_str,conc_name):
     pair_pattern = re.compile(r"\*\* [0-9]+\) ([a-zA-Z ()0-9_]+)\n"+conc_name+"> ([a-zA-Z ]+)")
-    replace_pattern = re.compile(r"\* ([a-zA-Z_ 0-9]+)\n([a-zA-Z_0-9]+) : [0-9_]+ → ([a-zA-Z_0-9]+)")
+    replace_pattern = re.compile(r"\* ([()a-zA-Z_ 0-9]+)\n([a-zA-Z_0-9]+) : ([a-zA-Z0-9_]+ → )+([a-zA-Z_0-9]+)")
 
     pair_iter = re.finditer(pair_pattern,in_str)
     replace_iter = re.finditer(replace_pattern,in_str)
@@ -19,7 +19,7 @@ def read_gftest_output(in_str,conc_name):
     while True:
         try:
             replace_match = next(replace_iter)
-            replacements.append((replace_match.group(3),replace_match.group(1)))
+            replacements.append((replace_match.group(4),replace_match.group(1)))
         except StopIteration:
             break
 
